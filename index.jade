@@ -1,0 +1,73 @@
+doctype html
+html
+  head
+    title Deep Dreams
+    link(rel="stylesheet", type="text/css", href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css") 
+    link(rel="stylesheet", type="text/css", href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/css/fluidbox.css")
+
+    
+    link(rel="stylesheet", type="text/css", href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=Roboto:400,900,700")
+    link(rel="stylesheet", type="text/css", href="deepdreams.css")
+
+
+
+  body
+    .credits
+      p code by 
+        a(href="https://twitter.com/zan2434") @zan2434
+      p design by 
+        a(href="https://twitter.com/adhsu") @adhsu
+
+    .dark-bg-img
+    .dark-bg#large-header
+      canvas#canvas
+
+    .container
+      .header
+        h1 
+          i.icon.ion-android-cloud-circle
+          |  Deep Dreams
+
+        p.sub Deep Dreams uses artificial intelligence to create your own neural network art. 
+        p.sub As seen on 
+          a(href="http://www.popsci.com/turn-your-life-computers-dream-world") Popular Science.
+          |  Based on 
+          a(href="https://github.com/google/deepdream") Google Deepdream.
+
+      // h3 Create your own deep dream
+
+      .upload-area
+        button.btn-create.btn-file
+          span#filename First, upload an image...
+
+          input(name="upload", type="file", title="Image to dream about", accept="image/*")
+
+        button.btn-create.btn-dream(disabled) Click to Dream
+
+      h3 The 
+        span.easter machine 
+        |  has produced two dreams:
+      .results
+        .results-col
+          img(src="images/jenn.png")
+          button Add to gallery
+        .results-col
+          img(src="images/zain.jpg")
+          button Add to gallery
+        .clearfix
+
+      h3 #deepdream gallery
+      
+      #masonry-container.clearfix
+
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+  script(src="jquery.masonry.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/1.4.3.1/jquery.fluidbox.min.js")
+
+  script(src="TweenLite.min.js")
+  script(src="EasePack.min.js")
+  script(src="rAF.js")
+
+  script(src="draw.js")
+  script(src="deepdreams.js")
