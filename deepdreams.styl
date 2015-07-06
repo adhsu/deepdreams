@@ -1,0 +1,175 @@
+
+
+body
+  color white
+  font-family 'Roboto', 'Arial', sans-serif
+
+.container
+  margin-top 40px
+  margin-bottom 40px
+p.sub
+  font-size 16px
+  line-height 1.6
+  margin 0
+
+.header
+  text-align center
+  
+#canvas
+  opacity 0.3
+
+.dark-bg
+  background-color rgba(0,0,0,0.7)
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed
+  top: 0
+  left: 0
+  z-index: -1
+
+.dark-bg-img
+  background-image url('bgs/sky-small.jpg')
+  background-size cover
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed
+  top: 0
+  left: 0
+  z-index: -1
+    
+
+
+h1
+  color white
+  font-size 40px
+  font-weight 400
+  text-transform uppercase
+
+h3
+  margin-top 50px
+  margin-bottom 30px
+  
+a
+  color white
+  text-decoration underline
+  &:hover
+    color white
+
+#masonry-container
+  clear both
+  margin-bottom 50px
+  margin 0 auto
+
+.box
+  margin 5px
+  width 200px
+  float left
+  
+  img
+    display block
+    width 100%
+    border-radius 3px
+
+.fluidbox-overlay
+  background-color rgba(0,0,0,0.8)
+    
+.upload-area
+  margin 60px 0
+  text-align center
+  
+.btn-create
+  position: relative;
+  overflow: hidden;
+  
+  border 2px solid white
+  background none
+  padding 15px 30px
+  margin-right 20px
+  font-size 16px
+  transition border-color 0.5s, color 0.5s
+  &:hover
+    border-color rgba(255,255,255,0.8)
+    color rgba(255,255,255,0.8)
+    
+  
+  &:disabled
+    border-color rgba(255,255,255,0.3)
+    color rgba(255,255,255,0.3)
+    
+.btn-file
+  
+  &.done
+    border-color #5cb85c
+    color #5cb85c
+
+.btn-file input[type=file]
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+
+input[readonly]
+  background-color: white !important;
+  cursor: text !important;
+
+.results
+  .results-col
+    float left
+    width 50%
+    text-align center
+  
+  button
+    opacity 0.8
+    color white
+    border 1px solid white
+    background none
+    font-size 12px
+    padding 6px 15px
+    margin-top 10px
+  img
+    display block
+    width 90%
+    margin 0 auto
+
+.credits
+  position fixed
+  bottom 10px
+  right 10px
+  text-align right
+  font-size 12px
+  color rgba(255,255,255,0.5)
+  opacity 0.3
+  transition opacity 0.5s
+  &:hover
+    opacity 1
+    
+  a
+    color rgba(255,255,255,0.5)
+  p
+    margin 0
+  
+  span.easter2-show
+    display none
+    &.show-easter
+      display inline-block
